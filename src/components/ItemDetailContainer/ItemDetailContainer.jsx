@@ -31,16 +31,6 @@ const ItemDetailContainer = () => {
             .finally(() => {
                 setLoading(false)
             })
-        // getProductById(itemId)
-        // .then(response => {
-        //     setProduct(response)
-        // })
-        // .catch(error => {
-        //     showNotification("error", "Hubo un error cargando los productos")
-        // })
-        // .finally(() => {
-        //     setLoading(false)
-        // })
     }, [itemId])
 
     if(loading) {
