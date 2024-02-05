@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import clas from "./ItemListContainer.module.css";
-// import { getProductsByCategory, getProducts } from "../../AsyncMock";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { useNotification } from "../../Notification/NotificationService";
