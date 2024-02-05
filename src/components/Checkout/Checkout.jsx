@@ -4,6 +4,7 @@ import { db } from "../../services/firebase/firebaseconfig"
 import { addDoc, collection, getDocs, query, writeBatch, where, documentId} from "firebase/firestore"
 import { useNotification } from "../../Notification/NotificationService"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
+import clas from "./checkout.module.css"
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
@@ -77,10 +78,10 @@ const Checkout = () => {
         }
 
     return(
-        <>
+        <div className={clas.Checkout}>
             <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder}/>
-        </>
+        </div>
     )
 }
 

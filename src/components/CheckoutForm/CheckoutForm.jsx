@@ -1,4 +1,5 @@
 import { useState } from "react"
+import clas from "./CheckoutForm.module.css"
 
 const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState("")
@@ -16,21 +17,21 @@ const CheckoutForm = ({ onConfirm }) => {
     }
 
     return(
-        <div>
-            <form onSubmit={handleConfirm} className="form">
-                <label className="label">
-                    Nombre
-                    <input className="input" type="text" value={name} onChange={({ target }) => setName(target.value)}/>
+        <div className={clas.divform}>
+            <form onSubmit={handleConfirm} className={clas.form}>
+                <label className={clas.label}>
+                    Nombre:
+                    <input className={clas.input} type="text" value={name} onChange={({ target }) => setName(target.value)}/>
                 </label>
-                <label className="label">
-                    Telefono
-                    <input className="input" type="text" value={phone} onChange={({ target }) => setPhone(target.value)} />
+                <label className={clas.label}>
+                    Telefono:
+                    <input className={clas.input} type="text" value={phone} onChange={({ target }) => setPhone(target.value)} />
                 </label>
-                <label className="input">
-                    Email
-                    <input className="input" type="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                <label className={clas.label}>
+                    Email:
+                    <input className={clas.input}type="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
                 </label>
-                <div className="label">
+                <div className={clas.btn}>
                     <button type="sumbit" className="button">Crear Orden</button>
                 </div>
             </form>

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNotification } from "../../Notification/NotificationService";
-import { db } from "../../services/firebase/firebaseconfig";
-import { getDocs, collection, query, where } from "firebase/firestore";
 import clas from "./ItemListContainer.module.css";
 import ItemList from "../ItemList/ItemList";
+import { getProducts } from "../../services/firebase/firestore/products";
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -18,18 +17,9 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     setLoading(true)
 
-    const productsCollection = categoryId 
-    ? query(collection(db, "products"), where("category", "==", categoryId))
-    : collection(db, "products")
-    
-    getDocs(productsCollection)
-        .then(querySnapshot => {
-            const productsAdapted = querySnapshot.docs.map(doc => {
-              const fields = doc.data()
-              return{id: doc.id, ...fields}
-            })
-
-            setProducts(productsAdapted)
+    getProducts(categoryId)
+        .then(products => {
+          setProducts(products)
         })
         .catch(error => {
           showNotification("error", "hubo un error")
