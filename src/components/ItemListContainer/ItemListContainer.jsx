@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import clas from "./ItemListContainer.module.css";
-import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { useNotification } from "../../Notification/NotificationService";
 import { db } from "../../services/firebase/firebaseconfig";
 import { getDocs, collection, query, where } from "firebase/firestore";
+import clas from "./ItemListContainer.module.css";
+import ItemList from "../ItemList/ItemList";
+
 
 const ItemListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState(true)
