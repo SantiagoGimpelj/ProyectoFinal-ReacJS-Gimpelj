@@ -1,0 +1,39 @@
+.CartView{
+    background-color: rgb(224, 107, 107);
+    color: black;
+    border: solid white 4px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    margin: 15px;
+}
+
+.info{
+    font-size: 1.5rem;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.divcheck{
+    padding: 10px;
+    margin: 10px;
+}
+
+.check{
+    color: black;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.check:hover{
+    border: solid rgb(73, 73, 146) 2px;
+}

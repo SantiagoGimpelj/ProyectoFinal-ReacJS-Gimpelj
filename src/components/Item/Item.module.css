@@ -1,0 +1,51 @@
+.ItemImg{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 10px;
+}
+.CardItem{
+    background-color: rgb(224, 107, 107);
+    border: solid rgb(255, 255, 255) 4px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+
+}
+.Header{
+    font-size: 1.5rem;
+}
+.ItemHeader{
+    display: flex;
+    text-align: center;
+}
+.Info{
+    color: black;
+    font-size: 1rem;
+}
+.ItemFooter{
+    color: black;
+    border-radius: 10px;
+    border: solid 3px white;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+.ItemFooter:hover {
+    border: solid 4px #646cff;
+  }
+  /* .ItemFooter:focus,
+  .ItemFooter:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  } */

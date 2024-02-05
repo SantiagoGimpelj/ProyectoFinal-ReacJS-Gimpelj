@@ -1,0 +1,37 @@
+.ItemImg{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 10px;
+}
+.CardItem{
+    color:black;
+    background-color: rgb(224, 107, 107);
+    border: solid rgb(255, 255, 255) 4px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.Header{
+    font-size: 1.5rem;
+}
+.ItemHeader{
+    display: flex;
+    text-align: center;
+}
+.option{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white 3px;
+}
+
+.option:hover{
+    border: solid 3px rgb(105, 105, 216);
+}

@@ -1,0 +1,21 @@
+.carrito{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+.contador{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
