@@ -24,6 +24,3 @@ Installation
 Install the dependencies and devDependencies and start the server.
 
 npm install
-
-Aca esta el video de como funciona la pagina 
-[text](../../Downloads/recording.mkv)
