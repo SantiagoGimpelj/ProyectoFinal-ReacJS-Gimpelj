@@ -1,8 +1,23 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenidos a dISTRIBUIDORA RPG
 
-Currently, two official plugins are available:
+Features
+TIENE DIFERENTES CARPETAS DONDE SE DESARROLA EL TRABAJO
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Components es donde es encuentran los archivos jsx que contiene su parte html con su logica correspondiente
+Context donde se encuntra la logica del carrito para su uso adecado
+Notificationes donde se encunetra la logica echa para cada vez que una persona agrege algo al carrito o haya un error salte una notificaion que le indique al usuario
+Servics donde se encuentra firebase que se utiliza apra traer productos desde una base de datos y tambien para el uso de generar orden que esta no esta incluida ahi sino que en componentes checkout
+Tech
+Dillinger uses a number of open source projects to work properly:
+
+[HTML]
+[JAVASCRIP]
+[css]
+[NodeJs]
+
+Installation
+Install the dependencies and devDependencies and start the server.
+
+npm install
